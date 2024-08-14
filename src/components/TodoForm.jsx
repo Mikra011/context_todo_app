@@ -1,4 +1,4 @@
-import React, { cloneElement, useContext } from 'react'
+import React, { useContext } from 'react'
 import { TodosContext } from '../context/todos'
 
 export default function TodoForm() {
@@ -19,7 +19,6 @@ export default function TodoForm() {
     evt.preventDefault()
     createNewTodo(todoLabel, todoIsCompleted)
     resetForm()
-    console.log({todoLabel},{todoIsCompleted})
   }
 
   return (
